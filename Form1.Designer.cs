@@ -36,6 +36,10 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.userLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnNuevoPrestamo = new FontAwesome.Sharp.IconButton();
+            this.btnCliente = new FontAwesome.Sharp.IconButton();
+            this.btnTodos = new FontAwesome.Sharp.IconButton();
+            this.btnEmpleados = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,6 +55,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(791, 33);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // button1
             // 
@@ -121,12 +126,80 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnNuevoPrestamo
+            // 
+            this.btnNuevoPrestamo.FlatAppearance.BorderSize = 0;
+            this.btnNuevoPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoPrestamo.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.btnNuevoPrestamo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnNuevoPrestamo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNuevoPrestamo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevoPrestamo.Location = new System.Drawing.Point(159, 348);
+            this.btnNuevoPrestamo.Name = "btnNuevoPrestamo";
+            this.btnNuevoPrestamo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnNuevoPrestamo.Size = new System.Drawing.Size(225, 85);
+            this.btnNuevoPrestamo.TabIndex = 2;
+            this.btnNuevoPrestamo.Text = "Nuevo Prestamo";
+            this.btnNuevoPrestamo.UseVisualStyleBackColor = true;
+            // 
+            // btnCliente
+            // 
+            this.btnCliente.FlatAppearance.BorderSize = 0;
+            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCliente.IconChar = FontAwesome.Sharp.IconChar.NetworkWired;
+            this.btnCliente.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCliente.Location = new System.Drawing.Point(402, 348);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnCliente.Size = new System.Drawing.Size(225, 85);
+            this.btnCliente.TabIndex = 3;
+            this.btnCliente.Text = "Clientes";
+            this.btnCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnTodos
+            // 
+            this.btnTodos.FlatAppearance.BorderSize = 0;
+            this.btnTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTodos.IconChar = FontAwesome.Sharp.IconChar.FunnelDollar;
+            this.btnTodos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnTodos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTodos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTodos.Location = new System.Drawing.Point(159, 456);
+            this.btnTodos.Name = "btnTodos";
+            this.btnTodos.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnTodos.Size = new System.Drawing.Size(225, 85);
+            this.btnTodos.TabIndex = 4;
+            this.btnTodos.Text = "Todos Los prestamos";
+            this.btnTodos.UseVisualStyleBackColor = true;
+            // 
+            // btnEmpleados
+            // 
+            this.btnEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.btnEmpleados.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEmpleados.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEmpleados.Location = new System.Drawing.Point(402, 456);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnEmpleados.Size = new System.Drawing.Size(225, 85);
+            this.btnEmpleados.TabIndex = 5;
+            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(791, 591);
+            this.Controls.Add(this.btnEmpleados);
+            this.Controls.Add(this.btnTodos);
+            this.Controls.Add(this.btnCliente);
+            this.Controls.Add(this.btnNuevoPrestamo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -150,6 +223,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label userLabel;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private FontAwesome.Sharp.IconButton btnNuevoPrestamo;
+        private FontAwesome.Sharp.IconButton btnCliente;
+        private FontAwesome.Sharp.IconButton btnTodos;
+        private FontAwesome.Sharp.IconButton btnEmpleados;
     }
 }
 
