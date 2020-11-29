@@ -20,10 +20,11 @@ namespace ControlPrestamos
         public Main()
         {
             InitializeComponent();
-            panel1.SuspendLayout();
-            panel1.Controls.Clear();
-            panel1.AutoScroll = false;
-            panel1.VerticalScroll.Visible = false;
+
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

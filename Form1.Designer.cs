@@ -146,7 +146,7 @@
             // 
             this.btnCliente.FlatAppearance.BorderSize = 0;
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCliente.IconChar = FontAwesome.Sharp.IconChar.NetworkWired;
+            this.btnCliente.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.btnCliente.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -178,7 +178,7 @@
             // 
             this.btnEmpleados.FlatAppearance.BorderSize = 0;
             this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmpleados.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.btnEmpleados.IconChar = FontAwesome.Sharp.IconChar.UserTie;
             this.btnEmpleados.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnEmpleados.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -202,7 +202,7 @@
             this.Controls.Add(this.btnNuevoPrestamo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Main_Load);
