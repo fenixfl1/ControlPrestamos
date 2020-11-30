@@ -29,7 +29,7 @@ namespace ControlPrestamos
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -66,6 +66,11 @@ namespace ControlPrestamos
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }
